@@ -26,7 +26,7 @@ A simple and efficient todo list application to manage your tasks and priorities
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/todo-app.git
+    git clone https://github.com/Edd224/my-todo-app
     cd todo-app
     ```
 
