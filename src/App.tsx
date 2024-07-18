@@ -154,9 +154,11 @@ const App: React.FC = () => {
             placeholder="Title"
             className="border p-2 rounded w-full my-2 sm:m-2 dark:bg-[#EEEEEE] "
           />
+
           <div className="flex m-0 sm:m-4">
             {renderPriorityStars(priority, setPriority)}
           </div>
+
           <input
             type="date"
             value={date}
@@ -176,6 +178,7 @@ const App: React.FC = () => {
             placeholder="Tags"
             className="border p-2 rounded w-full my-2 sm:m-2 dark:bg-[#EEEEEE] dark:text-[#012839]"
           />
+
           {editingTodo ? (
             <button onClick={saveTodo} className="bg-green-500 text-white p-2 rounded w-full">
               Save Changes
@@ -186,6 +189,7 @@ const App: React.FC = () => {
             </button>
           )}
         </div>
+        
         <ul className='gap-4 md:grid grid-cols-3'>
           {todos.map(todo => (
             <li key={todo.id} className={`bg-gray-200 dark:bg-[#009788] text-black dark:text-[#8CF2E0] p-4 mb-2 rounded flex justify-between items-center ease-in-out duration-500 transition-all`}>
